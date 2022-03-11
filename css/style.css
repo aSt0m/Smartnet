@@ -1,0 +1,424 @@
+
+
+:root{
+    --color-main: #25aae1;
+    --color-gray: #e7e7e7;
+    --color-footer: #002d4c;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+img{
+    min-width: 100%;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: #ffffff;
+}
+.center{
+    width: 85%;
+    margin: 0 auto;
+}
+.margin-0{
+    margin: 0;
+}
+.right{
+    text-align: right;
+}
+
+.header{
+    height: 70vh;
+    background-image: url(../Images/Banner_Principal.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container-header{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.container-main{
+    
+    position: relative;
+    color: #fff;
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+}
+.container-img{
+    width: 400px;
+    
+}
+.img-logo{
+    width: 100%;
+}
+
+.container-text{
+    width: 80%;
+    color: #fff;
+    position: relative;
+    left: 13rem;
+
+}
+.title-1{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+
+}
+.title-2{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+.title{
+    width: 100%;
+    margin: 0;
+   
+}
+
+.container-section-whois{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+.container-left{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/Imagen_1.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.container-right{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-img-whois{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+        width: 30rem;
+}
+.container-img-whois:after{
+    content: "?";
+    color: #058a93;
+    font-size: 2.8rem;
+}
+.img-whois{
+    width: 50%;
+}
+.container-text-whois{
+    margin-right: 15%;
+}
+
+.whois:first-letter{
+    text-transform: uppercase ;
+}
+.whois{
+    color: #058a93;
+    font-size: 2.8rem;
+    font-weight: 300;
+
+}
+
+.text-whois{
+    font-size: 1.4rem;
+}
+.section-particles{
+    height: 30vh;
+    background: linear-gradient(90deg, #022a5f,#058a93);
+}
+
+.section-advantage-sponsor{
+    height: 100vh;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-title{
+    width: 35%;
+    height: 100%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+.container-img-title{
+    width: 20rem;
+    display: flex;
+
+}
+
+.container-img-title:before{
+    content: "ventajas de";
+    color:#058A93;
+    position: absolute;
+    font-size: 3rem;
+    left: 8rem;
+    top: 2rem;
+    
+}
+.img-title{
+    height: 5rem;
+        
+    
+}
+.for-sponsor{
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-right: 5rem;
+    color:#058a93;
+}
+.grid-advantage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    row-gap: 6rem;
+    margin-bottom: 5rem;
+    
+    
+    
+}
+
+.container-img-advantage{
+    height: 18rem;
+    width: 18rem;
+    justify-self: center;     
+}
+
+.img-advantage{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px #e0e0e0,
+    -5px -5px 10px #ffffff;
+    
+}
+
+.section-advantage-bussiness{
+    height: 100vh;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grid-advantage-bussiness{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    row-gap: 6rem;
+    margin-bottom: 5rem;
+    transform-style: preserve-3d;
+    
+    
+}
+.container-advantage-bussiness{
+    
+    height: 18rem;
+    width: 18rem;
+    justify-self: center;     
+}
+.container-advantage-bussiness:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition: 3s
+}
+.container-advantage-bussiness:nth-child(5){
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.section-projects{
+    height: 90vh;
+    
+}
+.container-projects{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 20rem;
+    text-align: center;
+}
+.img-project{
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.section-map{
+    height: 100%;
+    margin: 5rem 0;
+
+}
+.container-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.container-img-map{
+    width: 50%;
+}
+.map-logo{
+    width: 2rem;
+}
+.map-title{
+    color:#058a93;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+.footer{
+    height: 100%;
+    background: url(../Images/Banner_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed;
+}
+.container-footer{
+    padding: 3rem 0;
+}
+.title-footer{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+.container-footer-project{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-img-project{
+    width: 30rem;
+}
+.fidelity{
+    object-fit: cover;
+    width: 110%;
+}
+.evolution{
+    object-fit: cover;
+    width: 85%;    
+}
+
+.smart{
+    background: #002d4c;
+}
+.container-smart{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+
+
+
+
+/* Practica tarjetas giratorias */
+
+.cards0{
+    margin: 5rem 0;
+    border: 1px solid rgb(64, 24, 175);
+    position: relative;
+    height: 50rem;
+
+}
+.container-cards0{
+    
+    border: 1px solid red;
+}
+.card0{
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid rgb(192, 206, 235);
+    border-radius: 1rem;
+    padding: 1rem;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    perspective: 5000px;
+    transition: 3s ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    
+    
+    
+}
+.card-front0{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card-back0{
+    font-size: 1.2rem;
+    transform: rotateY(180deg);
+    transition: 3s;
+    color: #fff;
+    background: linear-gradient(140deg, #022a5f,#058a93)
+
+}
+.container-cards0:hover .card-front0 { 
+    cursor: pointer;
+    transform: rotateY(-180deg);
+    
+}
+.container-cards0:hover .card-back0{
+    transform: rotateY(0deg);
+
+}

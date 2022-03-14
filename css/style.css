@@ -511,12 +511,7 @@ body{
 
 }
 
-
-
-
-
 /* Practica tarjetas giratorias */
-
 .section-cards0{
     margin: 5rem 0;
     border: 1px solid rgb(64, 24, 175);
@@ -527,10 +522,7 @@ body{
 .container-cards0{
     height:100%;
     border: 1px solid red;
-   
-    
-    
-   
+  
 }
 .card0{
     position: absolute;
@@ -548,9 +540,6 @@ body{
     top: 0;
     margin: auto;
     transform: perspective( 50000px);
- 
-    
-    
     
 }
 .card-front0{

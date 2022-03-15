@@ -170,7 +170,7 @@ body{
 .line-full{
     fill:#ffffff;
     stroke:#058a93;
-    stroke-width:4px;
+    stroke-width:2px;
     /* stroke-dasharray:310;
     stroke-dashoffset:-310; */
     animation: animaos 3s linear forwards;
@@ -248,6 +248,99 @@ body{
     row-gap: 6rem;
     margin-bottom: 5rem;  
 }
+.section-cards0{
+    margin: 5rem 0;
+   
+    height: 50rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.container-cards0{
+    height:22rem;
+    width:18rem;
+    position: relative;
+    
+    
+}
+
+/* .layer{
+    height:100%;
+    width:100%;
+    background: url(../images/rot.png);
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    position:absolute; 
+} */
+.img-front0{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+    position:relative;
+    border-radius: 1rem;
+    border:1px solid  #d1cdcd;
+    padding: 5px;
+   
+}
+
+.card0{
+    position: absolute;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    padding: 1rem;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 3s  ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: perspective( 50000px);
+    
+    
+}
+.card-front0{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.card-front0::after{
+    content:url("../images/ver.png");
+    position: absolute;   
+    object-fit: contain; 
+    opacity: 0.5;
+
+}
+
+.card-back0{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.2rem;
+    text-align: center;
+    transform: rotateY(180deg);
+    transition: 1.5s linear;
+    color: #fff;
+    background: linear-gradient(140deg, #022a5f,#058a93)
+
+}
+.container-cards0:hover .card-front0 { 
+    cursor:url(..Images/Cerebro_Azul.svg),url(..Images/Logo_1.png),pointer;
+    transform: rotateY(180deg);
+    
+}
+.container-cards0:hover .card-back0{
+    transform: rotateY(0deg);
+
+}
+
+
 .container-cards-advantage{
     position:relative;
     width:18rem;
@@ -262,17 +355,14 @@ body{
 .container-img-advantage{
     height: 22rem;
     width: 18rem;
-    justify-self: center;     
+    justify-self: center; 
+    position:relative;    
 }
 
 .img-advantage{
-   
-    height: 100%;
-    width: 100%;
-    padding: 2rem;
+    height: 22rem;
+    width: 18rem;
     border-radius: 1rem;
-    box-shadow:  20px 20px 60px #c4c4c4,
-    -20px -20px 60px #ffffff;
     object-fit:contain;
 }
 .container-line-2{
@@ -310,6 +400,10 @@ body{
 }
 .container-title-2{
     margin:5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .grid-advantage-bussiness{
     display: grid;
@@ -325,7 +419,8 @@ body{
     background:#fff;
     width:18rem;
     height:22rem;
-    
+    border: 1px solid #d1cdcd;
+    border-radius: 1rem;
     justify-self: center;     
 }
 .container-advantage-bussiness:hover{
@@ -512,66 +607,3 @@ body{
 }
 
 /* Practica tarjetas giratorias */
-.section-cards0{
-    margin: 5rem 0;
-    border: 1px solid rgb(64, 24, 175);
-    position: relative;
-    height: 50rem;
-
-}
-.container-cards0{
-    height:100%;
-    border: 1px solid red;
-  
-}
-.card0{
-    position: absolute;
-    width: 20rem;
-    height: 25rem;
-    border: 1px solid rgb(192, 206, 235);
-    border-radius: 1rem;
-    padding: 1rem;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    transition: 3s  ;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    transform: perspective( 50000px);
-    
-}
-.card-front0{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-   
-   
-}
-.card-front0::after{
-    content:url("../images/ver.png");
-    position: absolute;   
-    object-fit: contain; 
-    opacity: 0.5;
-
-}
-
-.card-back0{
-    font-size: 1.2rem;
-    transform: rotateY(180deg);
-    transition: 1.5s linear;
-    color: #fff;
-    background: linear-gradient(140deg, #022a5f,#058a93)
-
-}
-.container-cards0:hover .card-front0 { 
-    cursor: pointer;
-    transform: rotateY(180deg);
-    
-}
-.container-cards0:hover .card-back0{
-    transform: rotateY(0deg);
-
-}
-

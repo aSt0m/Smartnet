@@ -133,7 +133,8 @@ body{
 }
 .img-whois{
     height:100%; 
-    object-fit: contain;
+    -o-object-fit: contain; 
+       object-fit: contain;
     padding: 0;
     margin:0;
 }
@@ -173,7 +174,8 @@ body{
     stroke-width:2px;
     /* stroke-dasharray:310;
     stroke-dashoffset:-310; */
-    animation: animaos 3s linear forwards;
+    -webkit-animation: animaos 3s linear forwards;
+            animation: animaos 3s linear forwards;
 }
 
 
@@ -276,7 +278,8 @@ body{
 .img-front0{
     height:100%;
     width:100%;
-    object-fit:contain;
+    -o-object-fit:contain;
+       object-fit:contain;
     position:relative;
     border-radius: 1rem;
     border:1px solid  #d1cdcd;
@@ -292,7 +295,8 @@ body{
     border-radius: 1rem;
     padding: 1rem;
     transform-style: preserve-3d;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     transition: 3s  ;
     left: 0;
     right: 0;
@@ -313,7 +317,8 @@ body{
 .card-front0::after{
     content:url("../images/ver.png");
     position: absolute;   
-    object-fit: contain; 
+    -o-object-fit: contain;   
+       object-fit: contain; 
     opacity: 0.5;
 
 }
@@ -363,7 +368,8 @@ body{
     height: 22rem;
     width: 18rem;
     border-radius: 1rem;
-    object-fit:contain;
+    -o-object-fit:contain;
+       object-fit:contain;
 }
 .container-line-2{
 
@@ -522,7 +528,8 @@ body{
 .img-project{
     width: 15rem;
     height: 15rem;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .text-cards{
     font-size:1.3rem;
@@ -592,7 +599,8 @@ body{
     width: 110%;
 }
 .evolution{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 85%;    
 }
 

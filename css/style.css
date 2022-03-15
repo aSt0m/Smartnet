@@ -52,8 +52,14 @@ body{
     align-items: flex-start;
     
 }
+@media(max-width:768px){
+    .container-header{
+        
+    }
+}
 .container-main{
-    width:50rem;
+
+    width:100%;
     position: relative;
     top:2rem;
     left:2rem;
@@ -96,6 +102,24 @@ body{
     align-items: center; 
 
 }
+@media(max-width: 768px){
+    .container-section-whois{
+        flex-direction: column;
+    }
+    .container-left{
+        display: none;
+    }
+    .container-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-text-whois{
+        width:80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
  .container-left{
     margin: 0;
     padding: 0;
@@ -105,7 +129,9 @@ body{
 } 
 .img-left-whois{
     height: 100%;
+
 }
+
 .container-right{
     height: 100%;
     width: 100%;
@@ -314,14 +340,6 @@ body{
    
    
 }
-.card-front0::after{
-    content:url("../images/ver.png");
-    position: absolute;   
-    -o-object-fit: contain;   
-       object-fit: contain; 
-    opacity: 0.5;
-
-}
 
 .card-back0{
     display:flex;
@@ -484,6 +502,7 @@ body{
     justify-content: center;
     
 }
+
 .container-title-projects{
     width:40%;
     margin: 5rem 0;
@@ -520,6 +539,13 @@ body{
 .container-cards{
     display: flex;
     justify-content: space-evenly;
+}
+@media(max-width: 768px){
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 .card{
     width: 20rem;

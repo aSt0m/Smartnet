@@ -283,7 +283,6 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid red; 
 
 }
 .container-img-title{
@@ -333,15 +332,13 @@ body{
     .container-title{
         width:80%;
       
-        border: 1px solid red;
+        
     }
     .container-img-title{
         width:80%;
     }
     .title-ventajas{
         width:100%;
-        font-size:rem;
-
     }
     .container-imgsmart{
         width:100%;

@@ -36,6 +36,9 @@ body{
 .font-gray{
     color:rgb(78, 76, 76) !important;
 }
+.b-gray{
+    background: #e7e7e7;
+}
 .header{
     height: 70vh;
     background-image: url(../Images/Banner_Principal.png);
@@ -448,8 +451,8 @@ body{
     text-align: center;
     transform: rotateY(180deg);
     transition: 1.5s linear;
-    color: #fff;
-    background: linear-gradient(140deg, #022a5f,#058a93)
+    /* color: #fff; */
+    background: linear-gradient(180deg, #179BED,#7A65F0)
 
 }
 .container-cards0:hover .card-front0 { 
@@ -520,7 +523,7 @@ body{
     .section-advantage-mobile{
         height:100%;
         padding:2rem 0rem 10rem 0rem;
-        background:#ffffff;
+        
         
     }
 
@@ -693,7 +696,6 @@ body{
 .title-text-projects{
     text-align:center;
     margin: 5px 0;
-    display:inline-bl;
     color:#058A93;
     font-weight:300;
     font-size:2.4rem;
@@ -854,7 +856,7 @@ body{
 }
 .container-smart{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
     padding: 1rem;
 

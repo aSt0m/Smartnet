@@ -61,6 +61,7 @@ body{
 .bg-blue{
     background: linear-gradient(180deg, #002d4c 20%,#25aae1 80%) !important;
 }
+
 .header{
     height: 70vh;
     background-image: url(../Images/Banner_Principal.jpg);
@@ -356,12 +357,12 @@ body{
 }
 .title-ventajas{
     margin:0;
-    margin-right:1rem;
+    /* margin-right:1rem; */
     width:25rem; 
     color:#058A93; 
     font-size:2.4rem;
     font-weight:300;
-    text-align:right;
+    text-align:center;
 }
 
 .title-ventajas:first-letter{
@@ -759,14 +760,27 @@ body{
    
     
 }
+.title-projects{
+    width:100%;
+}
+
 .title-text-projects{
-    text-align:center;
+    width:100%;
     margin: 5px 0;
     color:#058A93;
     font-weight:300;
     font-size:2.4rem;
     margin:0;
     
+}
+.title-text-projects-2{
+    margin: 5px 0;
+    font-weight:300;
+    font-size:2.4rem;
+    margin:0;
+    width:50%;
+    color:#058A93;
+    text-align:center;
 }
 
 .title-text-projects:first-letter{
@@ -780,24 +794,27 @@ body{
     
 }
 
-.container-img{
+.img-title-projects{
     width:24rem;
+}
+.container-img{
+    width: 50%;
     margin-left:1rem;
 }
-.img-title-projects{
-    width: 10rem;
-}
-@media (max-width: 768px){
-    .container-title-projects{
-        
-    }
+/* @media (max-width: 768px){
+    
     .container-img-title-projects{
         width:50%;
     }
-    .img-title-projects{
+    .container-img{
+        width:100%;
+    }
+    .title-text-projects-2 {
+        font-size:1.8rem;
+        display:inline;
         
     }
-}
+} */
 
 .container-cards{
     display: flex;
@@ -829,9 +846,20 @@ body{
     .img-project{
         height:8rem;
     }
-    .title-text-projects{
+    .title-text-projects
+    {
         font-size:1.8rem;
+        text-align:center;
     }
+    .title-text-projects-2{
+        font-size:1.8rem;
+        width:40%;
+        
+    }
+    .img-title-projects{
+        width:40%;
+    }
+    
 }
 .section-map{
     height: 100%;
